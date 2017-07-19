@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Guest do
-  let(:guest) {Guest.new}
+  let(:guest) { Guest.new }
   # let(:valid_guest) { Guest.create(first_name:'Jorge', last_name:'Contreras', email: 'jorge@jorge.com')}
   # let(:invalid_guest) { Guest.create(first_name:'Jorge', email: 'jorge@jorge.com')}
 
