@@ -1,0 +1,36 @@
+<h1><u>Create a new reservation:</u></h1>
+
+<%= form_for @reservation do |f| %>
+  <%= f.fields_for :guest do |guest_form| %>
+    <h3> This is a form for the 'Guest Model':</h3>
+
+    <%= guest_form.label :first_name %><br/>
+    <%= guest_form.text_field :first_name %><br/><br/>
+
+    <%= guest_form.label :last_name %><br/>
+    <%= guest_form.text_field :last_name %><br/><br/>
+
+    <%= guest_form.label :email %><br/>
+    <%= guest_form.text_field :email %><br/><br/>
+
+  <% end %>
+
+  <h3> This is the form for the 'Reservation':</h3>
+  <%= f.label :guest %><br/>
+  <%= f.text_field :guest %><br/><br/>
+
+  <%= f.label :quantity %><br/>
+  <%= f.text_field :quantity %><br/><br/>
+
+  <%= f.label :check_in %><br/>
+  <%= f.text_field :check_in %><br/><br/>
+
+  <%= f.label :check_out %><br/>
+  <%= f.text_field :check_out %><br/><br/>
+
+  <%= f.label :comments %><br/>
+  <%= f.text_field :comments %><br/><br/>
+
+  <%= f.submit "Make Reservation!" %>
+
+<% end %>
