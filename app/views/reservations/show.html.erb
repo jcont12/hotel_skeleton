@@ -1,0 +1,15 @@
+<h1>This is your new reservation:</h1>
+
+<%= @guest.first_name + '' + @guest.last_name %>
+
+<h4>Details:</h4>
+<p>Reservation id:</p>
+<%= @reservation.id %><br /><br />
+<p>Quantity of people in reservation:</p>
+<%= @reservation.quantity %><br /><br />
+<p>Check in date:</p>
+<%= @reservation.check_in %><br /><br />
+<p>Check out date:</p>
+<%= @reservation.check_out %><br /><br />
+<p>Comments:</p>
+<%= @reservation.comments %><br /><br />
